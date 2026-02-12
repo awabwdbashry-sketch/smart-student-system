@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="schedule.html">جدول المحاضرات</a>
+    <a href="extra_services.html">الخدمات الإضافية</a>
+</nav>
+<div class="dashboard">
+    <div class="student-list" style="display:flex; flex-direction: column; gap: 15px; padding: 20px;">
+        <div class="student" onclick="showStudent('awab')"><h3>أواب إبراهيم باشري</h3></div>
+        <div class="student" onclick="showStudent('abi')"><h3>أبي مكي الرشيد</h3></div>
+        <div class="student" onclick="showStudent('leen')"><h3>لين ممدوح</h3></div>
+        <div class="student" onclick="showStudent('luna')"><h3>لنا ممدوح</h3></div>
+    </div>
+    <div id="student-info" class="student-info" style="display:none; padding:20px;">
+        <button class="back-btn" onclick="goBack()">⬆️ رجوع</button>
+        <h2 id="student-name"></h2>
+        <p id="student-grade"></p>
+        <p id="student-courses"></p>
+    </div>
+</div>
+<footer>
+Developed by Awab Bashir <br>
+@aw__b7
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
